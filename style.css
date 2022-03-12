@@ -154,10 +154,10 @@ section::before {
 .About h2 {
   font-size: 3.5em;
   margin-bottom: 10px;
-  color: #ffffff;
+  color: #ffd5d5;
 }
 .About p {
   font-size: 1em;
-  color: #ffffff;
+  color: #ffd5d5;
   line-height: 25px;
 }
