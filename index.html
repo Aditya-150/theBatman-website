@@ -22,10 +22,10 @@
     </header>
     <section>
         <img src="../assets/batmanbro.png" id="batmanbro">
-        <img src="../assets/buildings1.png" id="buildings1">
-        <img src="../assets/buildings2.png" id="buildings2">
-        <img src="../assets/buildings3.png" id="buildings3">
-        <img src="../assets/moon.png" id="moon">
+        <img src="../assets/buildings1.png" id="buildings1" data-rate="0.2" class="scroll">
+        <img src="../assets/buildings2.png" id="buildings2" data-rate="0.3" class="scroll">
+        <img src="../assets/buildings3.png" id="buildings3" data-rate="0.4" class="scroll">
+        <img src="../assets/moon.png" id="moon" data-rate="1" class="scroll">
         <img src="../assets/platform.png" id="platform">
     </section>
     <div class="About" id="About">
@@ -44,19 +44,13 @@
             cape and pointed cowl and takes to the shadowy streets, skies and rooftops of Gotham City.</p>
     </div>
     <script>
-        let moon = document.getElementById('moon');
-        let buildings3 = document.getElementsById('building3');
-        let buildings2 = document.getElementsById('building2');
-        let buildings1 = document.getElementsById('building1');
-        let batmanbro = document.getElementsById('batmanbro');
-        let platform = document.getElementsById('platform');
-        
-        window.addEventListener('scroll', function(){
-            let value = window.scrollY;
-            moon.style.top = value * -2 + 'px';
-            buildings3.style.top = value * 1.5 + 'px';
-            buildings2.style.top = value * 1.4 + 'px';
-            buildings1.style.top = value * 1.3 + 'px';
+        window.addEventListener('scroll', function(e) {
+            const target = document.querySelectorAll('.scroll');
+            var index = 0, length = target.length;
+            for(index; index < length; index++) {
+                var pos = window.pageYOffset * target[index].dataset.rate;
+                target[index].style.transform = 'translate3d(0px, '+pos+'px, 0px)';
+            }
         })
     </script>
 </body>
