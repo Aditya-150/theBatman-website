@@ -184,6 +184,9 @@ section::before {
   border-radius: 3%;
   margin-right: 10px;
 }
+.row_moviecard:hover {
+  transform: scale(0.85);
+}
 .row_moviecards {
   display: flex;
   overflow-x: scroll;
@@ -192,4 +195,28 @@ section::before {
 }
 .row_moviecards::-webkit-scrollbar {
   display: none;
+}
+.Connect {
+  background: #550000;
+  padding: 100px;
+  justify-items: center;
+  z-index: 1000;
+}
+.Connect h2 {
+  font-size: 3.5em;
+  margin-bottom: 10px;
+  color: #ffd5d5;
+  text-align: center;
+}
+.Connect .logo {
+  margin: auto;
+  display: block;
+}
+.Connect .logo img {
+  height: 50px;
+  width: 50px;
+  margin-right: 10px;
+}
+.Connect .logo img:hover {
+  transform: scale(0.8);
 }
