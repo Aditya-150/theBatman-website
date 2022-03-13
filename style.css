@@ -209,13 +209,13 @@ section::before {
   text-align: center;
 }
 .Connect .logo {
-  margin: auto;
-  display: block;
+  display: flex;
+  justify-content: center;
 }
 .Connect .logo img {
   height: 50px;
   width: 50px;
-  margin-right: 10px;
+  margin-right: 5px;
 }
 .Connect .logo img:hover {
   transform: scale(0.8);
