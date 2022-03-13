@@ -16,7 +16,7 @@
         <ul class="navbar">
             <li><a href="#" class="active">Home</a></li>
             <li><a href="#">About</a></li>
-            <li><a href="#">Work</a></li>
+            <li><a href="#">Movies</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
     </header>
@@ -43,13 +43,28 @@
             beneath his family’s sprawling estate. By night, however, he sheds all pretense, dons his iconic scalloped
             cape and pointed cowl and takes to the shadowy streets, skies and rooftops of Gotham City.</p>
     </div>
+    <div class="moviesection">
+        <h2 class="movies">Movies</h2>
+        <div class="row_moviecards">
+            <img src="../assets/batman(1989).jpg" class="row_moviecard">
+            <img src="../assets/batmanreturns(1992).jpg" class="row_moviecard">
+            <img src="../assets/batmanbegins.jpg" class="row_moviecard">
+            <img src="../assets/darkknight.jpg" class="row_moviecard">
+            <img src="../assets/darkknightrises.jpg" class="row_moviecard">
+            <img src="../assets/JL.jpg" class="row_moviecard">
+            <img src="../assets/batmanVsuperman.jpg" class="row_moviecard">
+            <img src="../assets/ZackJL.jpg" class="row_moviecard">
+            <img src="../assets/thebatman2022.jpg" class="row_moviecard">
+        </div>
+    </div>
     <script>
-        window.addEventListener('scroll', function(e) {
+        window.addEventListener('scroll', function (e) {
             const target = document.querySelectorAll('.scroll');
-            var index = 0, length = target.length;
-            for(index; index < length; index++) {
+            var index = 0,
+                length = target.length;
+            for (index; index < length; index++) {
                 var pos = window.pageYOffset * target[index].dataset.rate;
-                target[index].style.transform = 'translate3d(0px, '+pos+'px, 0px)';
+                target[index].style.transform = 'translate3d(0px, ' + pos + 'px, 0px)';
             }
         })
     </script>
