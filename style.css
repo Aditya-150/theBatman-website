@@ -163,19 +163,20 @@ section::before {
 }
 .moviesection {
   position: relative;
-  padding: 100px;
+  padding-top: 100px;
+  padding-bottom: 100px;
   background: #550000;
   z-index: 1000;
 }
 .moviesection h2 {
   font-size: 3.5em;
   margin-bottom: 10px;
+  padding-left: 100px;
   color: #ffd5d5;
 }
 .row_moviecards {
   max-height: 100%;
   max-width: 100%;
-  margin-right: 10px;
   object-fit: contain;
 }
 .row_moviecard {
