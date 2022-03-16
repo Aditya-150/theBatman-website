@@ -267,10 +267,31 @@ section::before {
   z-index: 1000;
 }
 .Connect h2 {
-  font-size: 3.5em;
   margin-left: 238px;
+  display: flex;
+}
+.Connect h2 text {
+  font-size: 64px;
   color: #ffd5d5;
   text-align: left;
+}
+.Connect .line5 {
+  content: "";
+  background-color: #d80e0e;
+  border-radius: 20px;
+  margin-right: 9px;
+  margin-block-start: 17px;
+  width: 10px;
+  height: 45px;
+}
+.Connect .line6 {
+  content: "";
+  background-color: #ffd5d5;
+  border-radius: 20px;
+  margin-block-start: 8px;
+  margin-right: 12px;
+  width: 10px;
+  height: 54px;
 }
 .Connect .logo {
   display: flex;
